@@ -1,0 +1,12 @@
+Your name: Tim Kim
+Your student ID: 010368579
+Your major: Software Engineering
+Your preferred email address: tk961014@gmail.com
+Check one: [x] Undergraduate, [ ] Graduate, [ ] Open university 
+Repeating the class? [ ] Yes, [x] No
+Place and semester where you took a programming course in Java: SJSU
+Course number and grade received:CS46A B
+Place and semester where you took a course in data structures: SJSU
+Course number and grade received:CS46B B
+Time it took you to answer the two questions below: 3hr
+Did you ask anyone for help? [ ] Yes, [x] No
