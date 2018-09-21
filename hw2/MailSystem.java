@@ -1,4 +1,7 @@
+package hw2;
 import java.util.ArrayList;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 /**
    A system of voice mail boxes.
@@ -32,9 +35,30 @@ public class MailSystem
    public Mailbox findMailbox(String ext)
    {
       int i = Integer.parseInt(ext);
+      boolean numFound = false;
       if (1 <= i && i <= mailboxes.size())
          return  mailboxes.get(i - 1);
-      else return null;
+      else
+      {
+    	  try {
+    		  while(!numFound) {
+    			  i = Integer.parseInt(ext);
+    			  Pattern p = Pattern.compile("[A-Z,a-z]");
+    			  Matcher m = p.matcher(ext);
+    			  if (m.find()) {
+    				  System.out.println("Invalid Entry");
+    			  }
+    			  else {
+    				  i = Integer.parseInt(ext);
+    				  numFound = true;
+    			  }
+    		  }
+    	  }
+    	  catch(Exception e) {
+    		  e.printStackTrace();
+    	  }
+      }
+      return null;
    }
 
    private ArrayList<Mailbox> mailboxes;
