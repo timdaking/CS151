@@ -1,3 +1,4 @@
+package hw2;
 import java.util.Scanner;
 
 /**
@@ -41,9 +42,13 @@ public class Telephone
             c.hangup();
          else if (input.equalsIgnoreCase("Q"))
             more = false;
+         
          else if (input.length() == 1
             && "1234567890#".contains(input))
             c.dial(input);
+
+         else if (input.equalsIgnoreCase("#"))
+        	 c.record(input);
          else
             c.record(input);
       }

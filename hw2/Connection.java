@@ -1,3 +1,4 @@
+package hw2;
 /**
    Connects a phone to the mail system. The purpose of this
    class is to keep track of the state of a connection, since
@@ -215,7 +216,8 @@ public class Connection
    private static final int CHANGE_GREETING = 6;
 
    private static final String INITIAL_PROMPT = 
-         "Enter mailbox number followed by #";      
+		   "To leave a message, press (1), to access your mailbox, press (2)";
+         //"Enter mailbox number followed by #";      
    private static final String MAILBOX_MENU_TEXT = 
          "Enter 1 to listen to your messages\n"
          + "Enter 2 to change your passcode\n"
